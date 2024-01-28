@@ -1,0 +1,28 @@
+
+<div class="container mx-auto">
+  <app-header/>
+
+    <h1 class="text-lg font-bold">About</h1>
+    <p class="text-xs"><span>Lorem, ipsum dolor sit amet consectetur</span> adipisicing elit. Reiciendis ullam accusantium inventore porro, velit deleniti totam officia rem. Esse cupiditate id sit iusto eos nemo? Nulla atque voluptatibus iure magni.</p>
+    <p class="text-xs">Numero de Clientes: <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() >0"/></p>
+    <div>
+      <app-wave-audio audioUrl="assets/audio.mp3"/>
+    </div>
+
+    <!-- <app-product
+      *ngFor="let product of products()"
+      [title]="product.title"
+      [price]="product.price"
+      [img]="product.image"
+      (addToCart)="fromChild($event)"/> -->
+  </div>
+
+<!-- <p>
+  <input type="number" [value]="duration()" (change)="changeDuration($event)">
+</p>
+<p>
+  <input type="text" [value]="message()" (change)="changeMessage($event)">
+</p> -->
+<!-- <p>
+  <app-counter [duration]="duration()" [message]="message()" *ngIf="duration() >0"/>
+</p> -->
